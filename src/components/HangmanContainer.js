@@ -2,7 +2,6 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import Hangman from './Hangman'
 
-import { getPhotosByAlbum } from '../actions/photos'
 
 class HangmanContainer extends React.PureComponent {
   state = {}
@@ -22,11 +21,11 @@ class HangmanContainer extends React.PureComponent {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     photos: state.photos
-//   }
-// }
+const mapStateToProps = (state) => {
+  return {
+    
+  }
+}
 
 // export default connect(mapStateToProps)(PhotoPageContainer)
-export default connect(mapStateToProps, { getPhotosByAlbum })(PhotoPageContainer)
+export default connect(mapStateToProps, { })(HangmanContainer)

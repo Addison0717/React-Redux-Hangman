@@ -18,12 +18,10 @@ class HomepageContainer extends React.PureComponent {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//
-//   }
-// }
-//
-// export default connect(mapStateToProps, { })(HomepageContainer)
+const mapStateToProps = (state) => {
+  return {
 
-export default HomepageContainer
+  }
+}
+
+export default connect(mapStateToProps, { })(HomepageContainer)

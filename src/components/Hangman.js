@@ -5,7 +5,7 @@ export default function Hangman() {
 
   <div>
 
-    <h1>Hangman!</h1>
+    <h1>Hangman</h1>
 
   </div>
 
