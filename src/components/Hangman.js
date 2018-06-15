@@ -3,7 +3,13 @@ import * as gameLogic from '../lib/game'
 
 export default function Hangman(props) {
 
-  console.log(gameLogic)
+  // console.log(gameLogic)
+  console.log(props)
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //     props.makeGuess(this.value)
+  // }
 
   return (
 
@@ -13,8 +19,8 @@ export default function Hangman(props) {
 
     <h3> { props.word } is the secret word! </h3>
 
-    <div id="guessButtons">
-      <button>A</button>
+    <div id="guessButtons" >
+      <button onClick={props.makeGuess}>A</button>
       <button>B</button>
       <button>C</button>
       <button>D</button>

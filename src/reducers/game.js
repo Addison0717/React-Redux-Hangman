@@ -7,9 +7,11 @@ export default (state = initialState, action = {}) => {
   case 'NEW_GAME':
     return action.payload
   case 'MAKE_GUESS':
-    return [
-      ...action.payload
-    ]
+    // return [
+    //   state,
+    //   ...action.payload
+    // ]
+    return state
   default:
     return state
   }
