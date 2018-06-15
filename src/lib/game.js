@@ -268,3 +268,4 @@ export const wordList = [
 
 export const randomWord = () => {
   return wordList[Math.floor(Math.random() * wordList.length)]
+}

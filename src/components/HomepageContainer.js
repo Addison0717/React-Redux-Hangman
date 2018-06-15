@@ -3,9 +3,10 @@ import { connect } from 'react-redux'
 import Homepage from './Homepage'
 
 class HomepageContainer extends React.PureComponent {
-  state = {}
 
   componentDidMount() {
+
+
 
   }
 
@@ -24,4 +25,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { })(HomepageContainer)
+export default connect(mapStateToProps, {  })(HomepageContainer)
