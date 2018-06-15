@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import Hangman from './Hangman'
+import Buttons from './Buttons'
 
 import { newGame } from '../actions/game'
 import { makeGuess } from '../actions/game'
@@ -18,7 +19,10 @@ class HangmanContainer extends React.PureComponent {
     return (
 
       <div>
-        <Hangman word={this.props.game.word} makeGuess={this.props.makeGuess}/>
+        <Hangman word={this.props.game.word} />
+
+        <Buttons makeGuess={this.props.makeGuess}/>
+
       </div>
 
     )
