@@ -4,11 +4,7 @@ import Homepage from './Homepage'
 
 class HomepageContainer extends React.PureComponent {
 
-  componentDidMount() {
-
-
-
-  }
+  componentDidMount() {  }
 
   render() {
     return (

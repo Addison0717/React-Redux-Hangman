@@ -15,16 +15,12 @@ class HangmanContainer extends React.PureComponent {
   }
 
   render() {
-    // console.log(this.props.game)
     return (
-
       <div>
         <Hangman word={this.props.game.word} guesses={this.props.game.guesses}/>
 
         <Buttons makeGuess={this.props.makeGuess} guesses={this.props.game.guesses}/>
-
       </div>
-
     )
   }
 }
@@ -35,6 +31,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-
-// export default connect(mapStateToProps)(PhotoPageContainer)
 export default connect(mapStateToProps, { newGame, makeGuess })(HangmanContainer)

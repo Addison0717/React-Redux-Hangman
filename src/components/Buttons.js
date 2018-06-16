@@ -7,7 +7,6 @@ export default class Buttons extends PureComponent {
     if (this.props.guesses.includes(e.target.value)) {
       console.log('You already guessed that letter!')
     } else {
-      // this.props.makeGuess(e.target.value)
       this.props.makeGuess(e.target.value.toLowerCase())
     }
 
