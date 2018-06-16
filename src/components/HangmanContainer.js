@@ -15,13 +15,13 @@ class HangmanContainer extends React.PureComponent {
   }
 
   render() {
-    // console.log(this.props)
+    // console.log(this.props.game)
     return (
 
       <div>
-        <Hangman word={this.props.game.word} />
+        <Hangman word={this.props.game.word} guesses={this.props.game.guesses}/>
 
-        <Buttons makeGuess={this.props.makeGuess}/>
+        <Buttons makeGuess={this.props.makeGuess} guesses={this.props.game.guesses}/>
 
       </div>
 

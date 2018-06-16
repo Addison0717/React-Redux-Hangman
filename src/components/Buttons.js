@@ -3,14 +3,21 @@ import React, { PureComponent } from 'react'
 export default class Buttons extends PureComponent {
 
   handleClick = (e) => {
-    this.props.makeGuess(e.target.value)
-    // console.log(e.target.value)
+
+    if (this.props.guesses.includes(e.target.value)) {
+      console.log('You already guessed that letter!')
+    } else {
+      // this.props.makeGuess(e.target.value)
+      this.props.makeGuess(e.target.value.toLowerCase())
+    }
+
   }
 
   render() {
-    // console.log(this)
      return (
+
         <div id="guessButtons" >
+
           <button onClick={this.handleClick} value="A">A</button>
           <button onClick={this.handleClick} value="B">B</button>
           <button onClick={this.handleClick} value="C">C</button>

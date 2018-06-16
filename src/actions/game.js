@@ -16,7 +16,6 @@ export function newGame(word, guesses) {
 }
 
 export function makeGuess(guesses) {
-  // console.log(this)
   return {
     type: MAKE_GUESS,
     // payload: {
