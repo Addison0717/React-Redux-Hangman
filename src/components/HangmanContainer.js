@@ -20,6 +20,8 @@ class HangmanContainer extends React.PureComponent {
         <Hangman word={this.props.game.word} guesses={this.props.game.guesses}/>
 
         <Buttons makeGuess={this.props.makeGuess} guesses={this.props.game.guesses}/>
+        <br/>  
+        <button onClick={this.props.newGame}>Start a new Game!</button>
       </div>
     )
   }

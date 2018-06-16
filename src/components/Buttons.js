@@ -9,6 +9,7 @@ export default class Buttons extends PureComponent {
     } else {
       this.props.makeGuess(e.target.value.toLowerCase())
     }
+    e.target.setAttribute('disabled', '')
 
   }
 

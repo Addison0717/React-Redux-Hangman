@@ -7,9 +7,11 @@ export default function Hangman(props) {
         return(
           <div>
             <h1>Hangman</h1>
-            <h2>You can only Guess 6 times!</h2>
-            <h3>Wrong Guess Count { gameLogic.wrongGuessCount(props.word, props.guesses) }</h3>
-            <h3> { gameLogic.showGuess(props.word, props.guesses) } is the secret word! </h3>
+            <br/>
+            <hr/>
+            <br/>
+            <h3>Wrong Guess Count: { gameLogic.wrongGuessCount(props.word, props.guesses) }</h3>
+            <h3> { gameLogic.showGuess(props.word, props.guesses) } is your secret word! </h3>
             <h3> Your Guessed Letters: { props.guesses } </h3>
           </div>
         )
