@@ -6,5 +6,11 @@
 }
 
 #heading {
+  padding-top: 20px;
   font-family: 'Shrikhand', 'Roboto', 'Arial';
+}
+
+hr {
+  margin-left:25%;
+  margin-right: 25%;
 }
